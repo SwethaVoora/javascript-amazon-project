@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css">
     <link rel="stylesheet" href="styles/pages/checkout/checkout.css">
   </head>
-  <body>
+  <body id="js-checkout">
     <div class="checkout-header">
       <div class="header-content">
         <div class="checkout-header-left-section">
@@ -43,8 +43,8 @@
       <div class="page-title">Review your order</div>
 
       <div class="checkout-grid">
-        <div class="order-summary">
-          <div class="cart-item-container">
+        <div class="order-summary js-order-summary">
+          <!-- <div class="cart-item-container">
             <div class="delivery-date">
               Delivery date: Tuesday, June 21
             </div>
@@ -192,17 +192,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="payment-summary">
-          <div class="payment-summary-title">
+          <!--<div class="payment-summary-title">
             Order Summary
           </div>
 
           <div class="payment-summary-row">
             <div>Items (3):</div>
-            <div class="payment-summary-money">$42.75</div>
+            <div class="payment-summary-money">$</div>
           </div>
 
           <div class="payment-summary-row">
@@ -227,9 +227,15 @@
 
           <button class="place-order-button button-primary">
             Place your order
-          </button>
+          </button>-->
         </div>
       </div>
     </div>
+
+    <!-- <script>
+      console.log(localStorage.getItem('checkoutHTML'));
+    </script> -->
+    <script src="data/products.js"></script>
+    <script async src="scripts/amazon.js"></script>
   </body>
 </html>
